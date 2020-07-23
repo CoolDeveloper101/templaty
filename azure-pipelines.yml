@@ -10,7 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  DOTNET_VERSION: 3.1.6
   buildConfiguration: 'Release'
 
 steps:
@@ -18,8 +17,6 @@ steps:
   displayName: Build
   inputs:
     command: build
-    versioningScheme: byEnvVar
-    versionEnvVar: DOTNET_VERSION
     projects: '**/*.csproj'
     arguments: '--configuration $(buildConfiguration)'
 
@@ -28,7 +25,5 @@ steps:
 - task: DotNetCoreCLI@2
   displayName: Test
   inputs:
-    versioningScheme: byEnvVar
-    versionEnvVar: DOTNET_VERSION
     command: test
     projects: '**/*.csproj'
