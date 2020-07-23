@@ -19,9 +19,16 @@ steps:
     command: build
     projects: '**/*.csproj'
     arguments: '--configuration $(buildConfiguration)'
+    majorVersion: 3
+    minorVersion: 1
+    patchVersion: 6
+  
 
 - task: DotNetCoreCLI@2
   displayName: Test
   inputs:
     command: test
     projects: '**/*.csproj'
+    majorVersion: 3
+    minorVersion: 1
+    patchVersion: 6
