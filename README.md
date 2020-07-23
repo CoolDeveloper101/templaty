@@ -1,4 +1,7 @@
 # templaty
+
+[![Build Status](https://dev.azure.com/cooldeveloper101/Templaty/_apis/build/status/CoolDeveloper101.templaty?branchName=master)](https://dev.azure.com/cooldeveloper101/Templaty/_build/latest?definitionId=4&branchName=master)
+
 A tool for easily creating boilerplate code. No need to install a separate cli for every framework to genrate starter code.
 
 
