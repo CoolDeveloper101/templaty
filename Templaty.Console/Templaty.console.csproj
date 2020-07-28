@@ -9,4 +9,10 @@
     <ProjectReference Include="..\Templaty.Core\Templaty.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="HelpFiles\help.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

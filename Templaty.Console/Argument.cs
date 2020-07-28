@@ -2,9 +2,9 @@
 {
     class Argument
     {
-        readonly string Command;
-        readonly ArgumentType Type;
-        readonly string Value;
+        public readonly string Command;
+        public readonly ArgumentType Type;
+        public readonly string Value;
 
         public Argument(string value)
         {
